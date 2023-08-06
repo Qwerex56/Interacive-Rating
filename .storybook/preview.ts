@@ -19,9 +19,6 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
-    viewport: {
-      viewports: INITIAL_VIEWPORTS,
-    },
     docs: {
       toc: true,
     },

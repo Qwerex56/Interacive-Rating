@@ -6,21 +6,21 @@
         {{ ratingStore.rating }}
       </template>
     </RatingScore>
-    <MessageContainer>
+    <MessageBox>
       <template #title>
         Thank you!
       </template>
       <template #content>
         We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
       </template>
-    </MessageContainer>
+    </MessageBox>
   </StepContainer>
 </template>
 
 <script setup lang="ts">
 import StepContainer from '@/components/StepContainer.vue';
 import RatingScore from '@/components/Icon/RatingScore.vue';
-import MessageContainer from '@/components/MessageContainer.vue';
+import MessageBox from '@/components/MessageBox.vue';
 
 import ThankYouPng from '@/assets/illustration-thank-you.svg';
 

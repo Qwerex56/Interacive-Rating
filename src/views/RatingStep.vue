@@ -1,14 +1,14 @@
 <template>
   <StepContainer>
     <StarLogo class="mb-[1rem] desktop:mb-[1.875rem]" />
-    <MessageContainer class="mb-[1.5rem]">
+    <MessageBox class="mb-[1.5rem]">
       <template #title>
         How did we do?
       </template>
       <template #content>
         Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
       </template>
-    </MessageContainer>
+    </MessageBox>
     <div class="flex mb-[1.5rem] gap-[1.125rem] desktop:mb-[2rem]">
       <RatingButton v-for="rate in 5" :key="rate" :rating-value="rate" />
     </div>
@@ -21,5 +21,5 @@ import StepContainer from '@/components/StepContainer.vue';
 import RatingButton from '@/components/RatingButton.vue';
 import SubmitButton from '@/components/SubmitButton.vue';
 import StarLogo from '@/components/Icon/StarLogo.vue';
-import MessageContainer from '@/components/MessageContainer.vue';
+import MessageBox from '@/components/MessageBox.vue';
 </script>
