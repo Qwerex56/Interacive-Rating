@@ -10,6 +10,11 @@ const router = createRouter({
       name: 'rating',
       component: RatingStep
     },
+    {
+      path: '/thankYou',
+      name: 'ThankYouStep',
+      component: () => import('@/views/ThankYouStep.vue'),
+    }
   ]
 })
 

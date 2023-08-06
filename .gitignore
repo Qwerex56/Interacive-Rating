@@ -20,7 +20,8 @@ coverage
 # Editor directories and files
 .vscode/*
 .vscode/
-./storybook/*
+.storybook/*
+.storybook/
 !.vscode/extensions.json
 .idea
 *.suo
