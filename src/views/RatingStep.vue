@@ -1,6 +1,6 @@
 <template>
   <StepContainer>
-    <StarLogo class="mb-[1rem]" />
+    <StarLogo class="mb-[1rem] desktop:mb-[1.875rem]" />
     <MessageContainer class="mb-[1.5rem]">
       <template #title>
         How did we do?
@@ -9,7 +9,7 @@
         Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
       </template>
     </MessageContainer>
-    <div class="flex mb-[1.5rem] gap-[1.125rem]">
+    <div class="flex mb-[1.5rem] gap-[1.125rem] desktop:mb-[2rem]">
       <RatingButton v-for="rate in 5" :key="rate" :rating-value="rate" />
     </div>
     <SubmitButton redirects-to="thankYou"/>

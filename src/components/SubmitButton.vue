@@ -1,5 +1,5 @@
 <template>
-  <button class="w-[100%] h-[2.8125rem] bg-orange text-white
+  <button class="w-full h-[2.8125rem] bg-orange text-white
     rounded-full
   hover:bg-white hover:text-orange
     font-overpass font-bold uppercase 

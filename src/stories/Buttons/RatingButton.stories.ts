@@ -11,12 +11,15 @@ export default meta;
 
 type Story = StoryObj<typeof RatingButton>;
 
-export const ratingButton: Story = {
+export const Default: Story = {
   render: (args) => ({
     components: { RatingButton },
     setup: () => {
       return { args };
     },
-    template: "<RatingButton>1</RatingButton>",
-  })
+    template: "<RatingButton v-bind='args' />",
+  }),
+  args: {
+    ratingValue: 1,
+  }
 }

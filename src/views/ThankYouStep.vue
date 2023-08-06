@@ -1,7 +1,7 @@
 <template>
   <StepContainer class="text-center items-center">
-    <img class="mt-[1.125rem] mb-[1.5rem] w-[9rem]" :src="ThankYouPng" alt="Thank you svg">
-    <RatingScore class="mb-[1.5rem]">
+    <img class="mt-[1.125rem] mb-[1.5rem] w-[9rem] desktop:w-[10.125rem] desktop:mb-[2rem]" :src="ThankYouPng" alt="Thank you svg">
+    <RatingScore class="mb-[1.5rem] desktop:mb-[2rem]">
       <template #rating>
         {{ ratingStore.rating }}
       </template>

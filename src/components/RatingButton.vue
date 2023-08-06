@@ -3,7 +3,8 @@
     class="w-[2.625rem] h-[2.625rem] rounded-[50%] text-[.875rem] 
           font-overpass font-[700] text-center
           hover:bg-medium-gray hover:text-white
-          duration-75"
+          duration-75
+          desktop:w-[3.1875rem] desktop:h-[3.1875rem] desktop:text-[1rem]"
     :class="isActive"
     @click="selectRating"
   >
@@ -22,10 +23,6 @@ const props = defineProps({
     type: Number,
     required: true,
   },
-  action: {
-    type: (): void => {},
-    required: false,
-  }
 })
 
 const isActive = computed<string>((): string => {
